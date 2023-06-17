@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import { AiFillAlert, AiFillAppstore, AiFillBuild } from "react-icons/ai";
 import { BsFillDiagram3Fill } from "react-icons/bs";
+import { FaDiscourse, FaUserFriends, FaRegPaperPlane } from "react-icons/fa";
 export default function Layout() {
   return (
     <div class="page d-flex">
@@ -50,7 +51,7 @@ export default function Layout() {
               class="d-flex align-center fs-14 c-black rad-6 p-10"
               href="courses.html"
             >
-              <i class="fa-solid fa-graduation-cap fa-fw"></i>
+              <FaDiscourse />
               <span>Courses</span>
             </a>
           </li>
@@ -59,7 +60,7 @@ export default function Layout() {
               class="d-flex align-center fs-14 c-black rad-6 p-10"
               href="friends.html"
             >
-              <i class="fa-regular fa-circle-user fa-fw"></i>
+              <FaUserFriends />
               <span>Friends</span>
             </a>
           </li>
@@ -68,7 +69,7 @@ export default function Layout() {
               class="d-flex align-center fs-14 c-black rad-6 p-10"
               href="files.html"
             >
-              <i class="fa-regular fa-file fa-fw"></i>
+              <AiFillAlert />
               <span>Files</span>
             </a>
           </li>
@@ -77,7 +78,7 @@ export default function Layout() {
               class="d-flex align-center fs-14 c-black rad-6 p-10"
               href="plans.html"
             >
-              <i class="fa-regular fa-credit-card fa-fw"></i>
+              <FaRegPaperPlane />
 
               <span>Plans</span>
             </a>

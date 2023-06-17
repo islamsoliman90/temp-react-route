@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-
+import UserProfile from "../compoments/userProfile";
+import Quickdraft from "../compoments/quickDraft";
+import Yearlytarget from "../compoments/YearlyTarget";
 function Home() {
   return (
     <div class="content w-full">
@@ -17,102 +19,9 @@ function Home() {
 
       <h1 class="p-relative">Dashboard</h1>
       <div class="wrapper d-grid gap-20">
-        <div class="welcome bg-white rad-10 txt-c-mobile block-mobile">
-          <div class="intro p-20 d-flex space-between bg-eee">
-            <div>
-              <h2 class="m-0">Welcome</h2>
-              <p class="c-grey mt-5">Soliman</p>
-            </div>
-            <img class="hide-mobile" src="imgs/welcome.png" alt="" />
-          </div>
-          <img src="imgs/avatar.png" alt="" class="avatar" />
-          <div class="body txt-c d-flex p-20 mt-20 mb-20 block-mobile">
-            <div>
-              Islam Soliman{" "}
-              <span class="d-block c-grey fs-14 mt-10">Developer</span>
-            </div>
-            <div>
-              80 <span class="d-block c-grey fs-14 mt-10">Projects</span>
-            </div>
-            <div>
-              $8500 <span class="d-block c-grey fs-14 mt-10">Earned</span>
-            </div>
-          </div>
-          <a
-            href="profile.html"
-            class="visit d-block fs-14 bg-blue c-white w-fit btn-shape"
-          >
-            Profile
-          </a>
-        </div>
-
-        <div class="quick-draft p-20 bg-white rad-10">
-          <h2 class="mt-0 mb-10">Quick Draft</h2>
-          <p class="mt-0 mb-20 c-grey fs-15">Write A Draft For Your Ideas</p>
-          <form>
-            <input
-              class="d-block mb-20 w-full p-10 b-none bg-eee rad-6"
-              type="text"
-              placeholder="Title"
-            />
-            <textarea
-              class="d-block mb-20 w-full p-10 b-none bg-eee rad-6"
-              placeholder="Your Thought"
-            ></textarea>
-            <input
-              class="save d-block fs-14 bg-blue c-white b-none w-fit btn-shape"
-              type="submit"
-              value="Save"
-            />
-          </form>
-        </div>
-
-        <div class="targets p-20 bg-white rad-10">
-          <h2 class="mt-0 mb-10">Yearly Targets</h2>
-          <p class="mt-0 mb-20 c-grey fs-15">Targets Of The Year</p>
-          <div class="target-row mb-20 blue center-flex">
-            <div class="icon center-flex">
-              <i class="fa-solid fa-dollar-sign fa-lg c-blue"></i>
-            </div>
-            <div class="details">
-              <span class="fs-14 c-grey">Money</span>
-              <span class="d-block mt-5 mb-10 fw-bold">$20.000</span>
-              <div class="progress p-relative">
-                <span class="bg-blue blue" style={{ width: "80%" }}>
-                  <span class="bg-blue">80%</span>
-                </span>
-              </div>
-            </div>
-          </div>
-          <div class="target-row mb-20 center-flex orange">
-            <div class="icon center-flex">
-              <i class="fa-solid fa-code fa-lg c-orange"></i>
-            </div>
-            <div class="details">
-              <span class="fs-14 c-grey">Projects</span>
-              <span class="d-block mt-5 mb-10 fw-bold">24</span>
-              <div class="progress p-relative">
-                <span class="bg-orange orange" style={{ width: "55%" }}>
-                  <span class="bg-orange">55%</span>
-                </span>
-              </div>
-            </div>
-          </div>
-          <div class="target-row mb-20 center-flex green">
-            <div class="icon center-flex">
-              <i class="fa-solid fa-user fa-lg c-green"></i>
-            </div>
-            <div class="details">
-              <span class="fs-14 c-grey">Team</span>
-              <span class="d-block mt-5 mb-10 fw-bold">12</span>
-              <div class="progress p-relative">
-                <span class="bg-green green" style={{ width: "75%" }}>
-                  <span class="bg-green">75%</span>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
+        <UserProfile />
+        <Quickdraft />
+        <Yearlytarget />
 
         <div class="tickets p-20 bg-white rad-10">
           <h2 class="mt-0 mb-10">Tickets Statistics</h2>
