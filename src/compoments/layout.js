@@ -2,30 +2,40 @@ import { Outlet } from "react-router-dom";
 import { AiFillAlert, AiFillAppstore, AiFillBuild } from "react-icons/ai";
 import { BsFillDiagram3Fill } from "react-icons/bs";
 import { FaDiscourse, FaUserFriends, FaRegPaperPlane } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import React from "react";
 export default function Layout() {
+  const [activePage, setActivePage] = React.useState("dashboard");
   return (
     <div class="page d-flex">
       <div class="sidebar bg-white p-20 p-relative">
         <h3 class="p-relative txt-c mt-0">Soliman</h3>
         <ul>
           <li>
-            <a
-              class="active d-flex align-center fs-14 c-black rad-6 p-10"
-              href="index.html"
+            <Link
+              className={
+                activePage == "dashboard"
+                  ? "active d-flex align-center fs-14 c-black rad-6 p-10"
+                  : " d-flex align-center fs-14 c-black rad-6 p-10"
+              }
+              to="/"
             >
               <AiFillAlert />
               <span>Dashboard</span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              class="d-flex align-center fs-14 c-black rad-6 p-10"
-              href="settings.html"
+            <Link
+              className={
+                activePage == "sitting"
+                  ? "active d-flex align-center fs-14 c-black rad-6 p-10"
+                  : " d-flex align-center fs-14 c-black rad-6 p-10"
+              }
+              to="sitting"
             >
-              <i class="fa-solid fa-gear fa-fw"></i>
               <AiFillAppstore />
               <span>Settings</span>
-            </a>
+            </Link>
           </li>
           <li>
             <a
@@ -85,7 +95,7 @@ export default function Layout() {
           </li>
         </ul>
       </div>
-      <Outlet />
+      <Outlet context={[activePage, setActivePage]} />
     </div>
   );
 }
