@@ -38,60 +38,77 @@ export default function Layout() {
             </Link>
           </li>
           <li>
-            <a
-              class="d-flex align-center fs-14 c-black rad-6 p-10"
-              href="profile.html"
+            <Link
+              className={
+                activePage == "profile"
+                  ? "active d-flex align-center fs-14 c-black rad-6 p-10 "
+                  : " d-flex align-center fs-14 c-black rad-6 p-10"}
+              to="profile"
             >
               <AiFillBuild />
               <span>Profile</span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              class="d-flex align-center fs-14 c-black rad-6 p-10"
-              href="projects.html"
+            <Link
+              className={
+                activePage == "project"
+                  ? "active d-flex align-center fs-14 c-black rad-6 p-10 "
+                  : " d-flex align-center fs-14 c-black rad-6 p-10"}
+              to="project"
             >
-              <i class="fa-solid fa-diagram-project fa-fw"></i>
               <BsFillDiagram3Fill />
               <span>Projects</span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              class="d-flex align-center fs-14 c-black rad-6 p-10"
-              href="courses.html"
+            <Link
+                 className={
+                  activePage == "courses"
+                    ? "active d-flex align-center fs-14 c-black rad-6 p-10 "
+                    : " d-flex align-center fs-14 c-black rad-6 p-10"}
+                to="courses"
             >
               <FaDiscourse />
               <span>Courses</span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              class="d-flex align-center fs-14 c-black rad-6 p-10"
-              href="friends.html"
+            <Link
+                 className={
+                  activePage == "friends"
+                    ? "active d-flex align-center fs-14 c-black rad-6 p-10 "
+                    : " d-flex align-center fs-14 c-black rad-6 p-10"}
+                to="friends"
             >
               <FaUserFriends />
               <span>Friends</span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              class="d-flex align-center fs-14 c-black rad-6 p-10"
-              href="files.html"
+            <Link
+                className={
+                  activePage == "files"
+                    ? "active d-flex align-center fs-14 c-black rad-6 p-10 "
+                    : " d-flex align-center fs-14 c-black rad-6 p-10"}
+                to="files"
             >
               <AiFillAlert />
               <span>Files</span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              class="d-flex align-center fs-14 c-black rad-6 p-10"
-              href="plans.html"
+            <Link
+                  className={
+                    activePage == "plans"
+                      ? "active d-flex align-center fs-14 c-black rad-6 p-10 "
+                      : " d-flex align-center fs-14 c-black rad-6 p-10"}
+                  to="plans"
             >
               <FaRegPaperPlane />
 
               <span>Plans</span>
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

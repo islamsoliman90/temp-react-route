@@ -15,7 +15,7 @@ import Lastpost from "../compoments/lastPost";
 import Social from "../compoments/social";
 import Project from "../compoments/project";
 function Home() {
-  const [activePage, setActivePage] = useOutletContext();
+  const [, setActivePage] = useOutletContext();
   setActivePage((e) => (e = "dashboard"));
   return (
     <div class="content w-full">

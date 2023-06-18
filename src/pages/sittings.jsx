@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { useOutletContext } from "react-router-dom";
 
-export default function Sittting() {
-  const [activePage, setActivePage] = useOutletContext();
+export default function Sittings() {
+  const [, setActivePage] = useOutletContext();
   setActivePage((e) => (e = "sitting"));
   return (
     <div class="page d-flex">
