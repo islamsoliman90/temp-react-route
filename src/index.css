@@ -82,8 +82,10 @@ ul {
 }
 @media (max-width: 767px) {
   .sidebar {
-    width: 58px;
+    width: 100px;
     padding: 10px;
+    display: block;
+    text-align: center;
   }
   .sidebar > h3 {
     font-size: 13px;
@@ -92,6 +94,15 @@ ul {
   .sidebar > h3::before,
   .sidebar > h3::after {
     display: none;
+  }
+  .sidebar ul li a{
+    padding: 0;
+    
+  }
+  .sidebar ul li a svg{
+    font-size: 22px;
+    padding:1px ;
+    margin: 0 auto;
   }
   .sidebar ul li a span {
     display: none;

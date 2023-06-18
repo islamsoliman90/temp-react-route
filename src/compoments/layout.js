@@ -24,11 +24,11 @@ export default function Layout() {
               <span>Dashboard</span>
             </Link>
           </li>
-          <li>
+          <li >
             <Link
               className={
                 activePage == "sitting"
-                  ? "active d-flex align-center fs-14 c-black rad-6 p-10"
+                  ? "active d-flex align-center fs-14 c-black rad-6 p-10 "
                   : " d-flex align-center fs-14 c-black rad-6 p-10"
               }
               to="sitting"
