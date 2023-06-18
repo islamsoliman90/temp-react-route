@@ -6,8 +6,8 @@ export default function Header(props) {
     <>
       <div class="head bg-white p-15 between-flex">
         <div class="search p-relative">
-          <input class="p-10" type="search" placeholder="Type A Keyword" />
-<AiOutlineSearch  className="search-Icon" />
+          <input class="p-10" type="input" placeholder="Type A Keyword" />
+          <AiOutlineSearch className="search-Icon" />
         </div>
         <div class="icons d-flex align-center">
           <span class="notification p-relative">
