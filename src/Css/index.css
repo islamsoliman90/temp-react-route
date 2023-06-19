@@ -315,28 +315,15 @@ ul {
       -ms-flex: 1;
           flex: 1;
 }
-
 .targets .details .progress {
   height: 4px;
 }
-
 .targets .details .progress > span {
   position: absolute;
   left: 0;
   top: 0;
   height: 100%;
 }
-
-.targets .details .progress > span span {
-  position: absolute;
-  bottom: 16px;
-  right: -16px;
-  color: white;
-  padding: 2px 5px;
-  border-radius: 6px;
-  font-size: 13px;
-}
-
 .targets .details .progress > span span::after {
   content: "";
   border-color: transparent;
@@ -348,15 +335,21 @@ ul {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
-
+.targets .details .progress span {
+  position: absolute;
+  bottom: 16px;
+  right: -16px;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 6px;
+  font-size: 13px;
+}
 .targets .details .progress > .blue span::after {
   border-top-color: var(--blue-color);
 }
-
 .targets .details .progress > .orange span::after {
   border-top-color: var(--orange-color);
 }
-
 .targets .details .progress > .green span::after {
   border-top-color: var(--green-color);
 }
@@ -382,12 +375,12 @@ ul {
   border: 1px solid #ccc;
   width: calc(50% - 10px);
 }
-
 @media (max-width: 767px) {
   .tickets .box {
     width: 100%;
   }
 }
+
 /* End Tickets */
 /* Start Latest News */
 .latest-news .news-row:not(:last-of-type) {
@@ -395,19 +388,16 @@ ul {
   padding-bottom: 20px;
   border-bottom: 1px solid #eee;
 }
-
 .latest-news .news-row img {
   width: 100px;
   border-radius: 6px;
   margin-right: 15px;
 }
-
 .latest-news .info {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
-
 .latest-news .info h3 {
   margin: 0 0 6px;
   font-size: 16px;
@@ -432,28 +422,23 @@ ul {
   padding-bottom: 15px;
   border-bottom: 1px solid #eee;
 }
-
 .tasks .info {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
-
 .tasks .done {
   opacity: 0.3;
 }
-
 .tasks .done h3,
 .tasks .done p {
   text-decoration: line-through;
 }
-
 .tasks .delete {
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-
 .tasks .delete:hover {
   color: var(--red-color);
 }
@@ -463,7 +448,6 @@ ul {
 .latest-uploads ul li:not(:last-child) {
   border-bottom: 1px solid #eee;
 }
-
 .latest-uploads ul li img {
   width: 40px;
   height: 40px;
@@ -479,7 +463,6 @@ ul {
   height: 100%;
   background-color: var(--blue-color);
 }
-
 .last-project ul li::before {
   content: "";
   width: 20px;
@@ -492,11 +475,9 @@ ul {
   margin-right: 15px;
   z-index: 1;
 }
-
 .last-project ul li.done::before {
   background-color: var(--blue-color);
 }
-
 .last-project ul li.current::before {
   -webkit-animation: change-color 0.8s infinite alternate;
           animation: change-color 0.8s infinite alternate;
@@ -516,19 +497,15 @@ ul {
   width: 15px;
   height: 15px;
 }
-
 .reminders ul li > .blue {
   border-left: 2px solid var(--blue-color);
 }
-
 .reminders ul li > .green {
   border-left: 2px solid var(--green-color);
 }
-
 .reminders ul li > .orange {
   border-left: 2px solid var(--orange-color);
 }
-
 .reminders ul li > .red {
   border-left: 2px solid var(--red-color);
 }
@@ -539,7 +516,6 @@ ul {
   width: 48px;
   height: 48px;
 }
-
 .latest-post .post-content {
   text-transform: capitalize;
   line-height: 1.8;
@@ -553,8 +529,7 @@ ul {
 .social-media .box {
   padding-left: 70px;
 }
-
-.social-media .box i {
+.social-media .box .icon {
   position: absolute;
   left: 0;
   top: 0;
@@ -562,47 +537,38 @@ ul {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-
 .social-media .box i:hover {
   -webkit-transform: rotate(5deg);
           transform: rotate(5deg);
 }
-
 .social-media .twitter {
   background-color: rgba(29, 161, 242, 0.2);
   color: #1da1f2;
 }
-
 .social-media .twitter i,
 .social-media .twitter a {
   background-color: #1da1f2;
 }
-
 .social-media .facebook {
   background-color: rgba(24, 119, 242, 0.2);
   color: #1da1f2;
 }
-
 .social-media .facebook i,
 .social-media .facebook a {
   background-color: #1877f2;
 }
-
 .social-media .youtube {
   background-color: rgba(255, 0, 0, 0.2);
   color: #ff0000;
 }
-
 .social-media .youtube i,
 .social-media .youtube a {
   background-color: #ff0000;
 }
-
 .social-media .linkedin {
   background-color: rgba(0, 119, 181, 0.2);
   color: #0077b5;
 }
-
 .social-media .linkedin i,
 .social-media .linkedin a {
   background-color: #0077b5;
