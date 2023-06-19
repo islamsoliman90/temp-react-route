@@ -582,35 +582,28 @@ ul {
     gap: 10px;
   }
 }
-
 .settings-page .close-message {
   border: 1px solid #ccc;
   resize: none;
   min-height: 150px;
 }
-
 .settings-page .email {
   display: inline-flex;
   width: calc(100% - 80px);
 }
-
 .settings-page .sec-box {
   padding-bottom: 15px;
 }
-
 .settings-page .sec-box:not(:last-of-type) {
   border-bottom: 1px solid #eee;
 }
-
 .settings-page .sec-box .button {
   transition: 0.3s;
 }
-
 .settings-page .sec-box .button:hover {
   background-color: var(--blue-alt-color);
 }
-
-.settings-page .social-boxes i {
+.settings-page .social-boxes svg {
   width: 40px;
   height: 40px;
   background-color: #f6f6f6;
@@ -619,7 +612,6 @@ ul {
   border-radius: 6px 0 0 6px;
   transition: 0.3s;
 }
-
 .settings-page .social-boxes input {
   height: 40px;
   background-color: #f6f6f6;
@@ -627,8 +619,7 @@ ul {
   padding-left: 10px;
   border-radius: 0 6px 6px 0;
 }
-
-.settings-page .social-boxes > div:focus-within i {
+.settings-page .social-boxes > div:focus-within svg {
   color: black;
 }
 
@@ -666,7 +657,7 @@ ul {
 
 .widgets-control .control label::after {
   font-family: var(--fa-style-family-classic);
-  content: "\f00c";
+  content: "";
   font-weight: 900;
   background-color: var(--blue-color);
   color: white;
@@ -772,7 +763,7 @@ ul {
 
 .toggle-switch::before {
   font-family: var(--fa-style-family-classic);
-  content: "\f00d";
+  content: "";
   font-weight: 900;
   background-color: white;
   width: 24px;
@@ -793,7 +784,7 @@ ul {
 }
 
 .toggle-checkbox:checked + .toggle-switch::before {
-  content: "\f00c";
+  content: "";
   left: 50px;
   color: var(--blue-color);
 }

@@ -11,7 +11,7 @@ import {
   Link,
 } from "react-router-dom";
 import Home from "./pages/home";
-import Sittings from "./pages/sittings";
+import Sittings from "./pages/settings";
 import Profile from "./pages/profile";
 import Project from "./pages/project";
 import Courses from "./pages/courses.jsx";
@@ -39,4 +39,8 @@ function App() {
   return <RouterProvider router={router} />;
 }
 
-ReactDOM.createRoot(document.getElementById("root")).render(<AppProvider><App /></AppProvider> );
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <AppProvider>
+    <App />
+  </AppProvider>
+);

@@ -1,29 +1,17 @@
 import React, { useState } from "react";
 import { useOutletContext } from "react-router-dom";
 import { useGlobalContext } from "../context";
-
+import Header from "../compoments/header";
+import { FaFacebook, FaYoutube, FaLinkedin, FaTwitter } from "react-icons/fa";
 export default function Sittings() {
   const [, setActivePage] = useOutletContext();
   setActivePage((e) => (e = "sitting"));
-  let { toggleHandler, toggle } = useGlobalContext();
-
-
+  let { search, toggleHandler } = useGlobalContext();
+  console.log(search);
   return (
     <div class="page d-flex">
       <div class="content w-full">
-        <div class="head bg-white p-15 between-flex">
-          <div class="search p-relative">
-            <input class="p-10" type="search" placeholder="Type A Keyword" />
-          </div>
-          <div class="icons d-flex align-center">
-            <span class="notification p-relative">
-              <i class="fa-regular fa-bell fa-lg"></i>
-            </span>
-            <img src="imgs/avatar.png" alt="" />
-          </div>
-        </div>
-
-        <h1 class="p-relative">Settings</h1>
+        <Header header="Setting" />
         <div class="settings-page m-20 d-grid gap-20">
           <div class="p-20 bg-white rad-10">
             <h2 class="mt-0 mb-10">Site Control</h2>
@@ -39,7 +27,12 @@ export default function Sittings() {
               </div>
               <div>
                 <label>
-                  <input class="toggle-checkbox" type="checkbox" onClick={toggleHandler("search")} checked={toggle.search} />
+                  <input
+                    class="toggle-checkbox"
+                    type="checkbox"
+                    onClick={toggleHandler}
+                    checked={search}
+                  />
                   <div class="toggle-switch"></div>
                 </label>
               </div>
@@ -114,7 +107,7 @@ export default function Sittings() {
                 <p class="c-grey mt-5 mb-0 fs-13">Enable/Disable The Feature</p>
               </div>
               <label>
-                <input class="toggle-checkbox" type="checkbox" onClick={toggleHandler} checked={!toggle} />
+                <input class="toggle-checkbox" type="checkbox" />
                 <div class="toggle-switch"></div>
               </label>
             </div>
@@ -135,7 +128,7 @@ export default function Sittings() {
             <h2 class="mt-0 mb-10">Social Info</h2>
             <p class="mt-0 mb-20 c-grey fs-15">Social Media Information</p>
             <div class="d-flex align-center mb-15">
-              <i class="fa-brands fa-twitter center-flex c-grey"></i>
+              <FaTwitter />
               <input
                 class="w-full"
                 type="text"
@@ -143,7 +136,7 @@ export default function Sittings() {
               />
             </div>
             <div class="d-flex align-center mb-15">
-              <i class="fa-brands fa-facebook-f center-flex c-grey"></i>
+              <FaFacebook />
               <input
                 class="w-full"
                 type="text"
@@ -151,7 +144,7 @@ export default function Sittings() {
               />
             </div>
             <div class="d-flex align-center mb-15">
-              <i class="fa-brands fa-linkedin center-flex c-grey"></i>
+              <FaLinkedin />
               <input
                 class="w-full"
                 type="text"
@@ -159,7 +152,7 @@ export default function Sittings() {
               />
             </div>
             <div class="d-flex align-center">
-              <i class="fa-brands fa-youtube center-flex c-grey"></i>
+              <FaYoutube />
               <input
                 class="w-full"
                 type="text"

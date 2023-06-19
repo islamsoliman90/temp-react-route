@@ -56,7 +56,7 @@ ul {
   width: 250px;
   box-shadow: 0 0 10px #ddd;
 
-  &>h3 {
+  & > h3 {
     margin-bottom: 50px;
 
     &::before,
@@ -107,13 +107,13 @@ ul {
     text-align: center;
   }
 
-  .sidebar>h3 {
+  .sidebar > h3 {
     font-size: 13px;
     margin-bottom: 15px;
   }
 
-  .sidebar>h3::before,
-  .sidebar>h3::after {
+  .sidebar > h3::before,
+  .sidebar > h3::after {
     display: none;
   }
 
@@ -261,7 +261,7 @@ ul {
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
 
-    &>div {
+    & > div {
       flex: 1;
     }
   }
@@ -285,7 +285,7 @@ ul {
     margin-left: 0;
   }
 
-  .welcome .body>div:not(:last-child) {
+  .welcome .body > div:not(:last-child) {
     margin-bottom: 20px;
   }
 }
@@ -323,7 +323,7 @@ ul {
   .progress {
     height: 4px;
 
-    &>span {
+    & > span {
       position: absolute;
       left: 0;
       top: 0;
@@ -351,15 +351,15 @@ ul {
       font-size: 13px;
     }
 
-    &>.blue span::after {
+    & > .blue span::after {
       border-top-color: var(--blue-color);
     }
 
-    &>.orange span::after {
+    & > .orange span::after {
       border-top-color: var(--orange-color);
     }
 
-    &>.green span::after {
+    & > .green span::after {
       border-top-color: var(--green-color);
     }
   }
@@ -522,19 +522,19 @@ ul {
     height: 15px;
   }
 
-  &>.blue {
+  & > .blue {
     border-left: 2px solid var(--blue-color);
   }
 
-  &>.green {
+  & > .green {
     border-left: 2px solid var(--green-color);
   }
 
-  &>.orange {
+  & > .orange {
     border-left: 2px solid var(--orange-color);
   }
 
-  &>.red {
+  & > .red {
     border-left: 2px solid var(--red-color);
   }
 }
@@ -576,8 +576,6 @@ ul {
     }
   }
 
-
-
   .twitter {
     background-color: rgb(29 161 242 / 20%);
     color: #1da1f2;
@@ -586,7 +584,6 @@ ul {
       background-color: #1da1f2;
     }
   }
-
 
   .facebook {
     background-color: rgb(24 119 242 / 20%);
@@ -597,7 +594,6 @@ ul {
     }
   }
 
-
   .youtube {
     background-color: rgb(255 0 0 / 20%);
     color: #ff0000;
@@ -607,7 +603,6 @@ ul {
     }
   }
 
-
   .linkedin {
     background-color: rgb(0 119 181 / 20%);
     color: #0077b5;
@@ -616,7 +611,6 @@ ul {
       background-color: #0077b5;
     }
   }
-
 }
 
 /* End Social Media */
@@ -671,7 +665,6 @@ ul {
       font-size: 13px;
     }
   }
-
 }
 
 /* End Projects Table */
@@ -685,56 +678,52 @@ ul {
     margin-right: 10px;
     gap: 10px;
   }
-}
+  .close-message {
+    border: 1px solid #ccc;
+    resize: none;
+    min-height: 150px;
+  }
 
+  .email {
+    display: inline-flex;
+    width: calc(100% - 80px);
+  }
 
-.settings-page .close-message {
-  border: 1px solid #ccc;
-  resize: none;
-  min-height: 150px;
-}
+  .sec-box {
+    padding-bottom: 15px;
+    &:not(:last-of-type) {
+      border-bottom: 1px solid #eee;
+    }
 
-.settings-page .email {
-  display: inline-flex;
-  width: calc(100% - 80px);
-}
+    .button {
+      transition: 0.3s;
+      &:hover {
+        background-color: var(--blue-alt-color);
+      }
+    }
+  }
 
-.settings-page .sec-box {
-  padding-bottom: 15px;
-}
+  .social-boxes svg {
+    width: 40px;
+    height: 40px;
+    background-color: #f6f6f6;
+    border: 1px solid #ddd;
+    border-right: none;
+    border-radius: 6px 0 0 6px;
+    transition: 0.3s;
+  }
 
-.settings-page .sec-box:not(:last-of-type) {
-  border-bottom: 1px solid #eee;
-}
+  .social-boxes input {
+    height: 40px;
+    background-color: #f6f6f6;
+    border: 1px solid #ddd;
+    padding-left: 10px;
+    border-radius: 0 6px 6px 0;
+  }
 
-.settings-page .sec-box .button {
-  transition: 0.3s;
-}
-
-.settings-page .sec-box .button:hover {
-  background-color: var(--blue-alt-color);
-}
-
-.settings-page .social-boxes i {
-  width: 40px;
-  height: 40px;
-  background-color: #f6f6f6;
-  border: 1px solid #ddd;
-  border-right: none;
-  border-radius: 6px 0 0 6px;
-  transition: 0.3s;
-}
-
-.settings-page .social-boxes input {
-  height: 40px;
-  background-color: #f6f6f6;
-  border: 1px solid #ddd;
-  padding-left: 10px;
-  border-radius: 0 6px 6px 0;
-}
-
-.settings-page .social-boxes>div:focus-within i {
-  color: black;
+  .social-boxes > div:focus-within svg {
+    color: black;
+  }
 }
 
 .widgets-control .control input[type="checkbox"] {
@@ -770,7 +759,7 @@ ul {
 
 .widgets-control .control label::after {
   font-family: var(--fa-style-family-classic);
-  content: "\f00c";
+  content: "";
   font-weight: 900;
   background-color: var(--blue-color);
   color: white;
@@ -784,7 +773,7 @@ ul {
   transition: 0.3s;
 }
 
-.widgets-control .control input[type="checkbox"]:checked+label::after {
+.widgets-control .control input[type="checkbox"]:checked + label::after {
   transform: scale(1);
 }
 
@@ -824,11 +813,11 @@ ul {
   transform: scale(0);
 }
 
-.backup-control .date input[type="radio"]:checked+label::before {
+.backup-control .date input[type="radio"]:checked + label::before {
   border-color: var(--blue-color);
 }
 
-.backup-control .date input[type="radio"]:checked+label::after {
+.backup-control .date input[type="radio"]:checked + label::after {
   transform: scale(1);
 }
 
@@ -852,7 +841,7 @@ ul {
   cursor: pointer;
 }
 
-.backup-control .servers input[type="radio"]:checked+.server {
+.backup-control .servers input[type="radio"]:checked + .server {
   border-color: var(--blue-color);
   color: var(--blue-color);
 }
@@ -875,7 +864,7 @@ ul {
 
 .toggle-switch::before {
   font-family: var(--fa-style-family-classic);
-  content: "\f00d";
+  content: "";
   font-weight: 900;
   background-color: white;
   width: 24px;
@@ -891,12 +880,12 @@ ul {
   transition: 0.3s;
 }
 
-.toggle-checkbox:checked+.toggle-switch {
+.toggle-checkbox:checked + .toggle-switch {
   background-color: var(--blue-color);
 }
 
-.toggle-checkbox:checked+.toggle-switch::before {
-  content: "\f00c";
+.toggle-checkbox:checked + .toggle-switch::before {
+  content: "";
   left: 50px;
   color: var(--blue-color);
 }
@@ -925,7 +914,7 @@ ul {
   }
 }
 
-.profile-page .avatar-box>img {
+.profile-page .avatar-box > img {
   width: 120px;
   height: 120px;
 }
@@ -956,7 +945,7 @@ ul {
   background-color: #f9f9f9;
 }
 
-.profile-page .info-box .box>div {
+.profile-page .info-box .box > div {
   min-width: 250px;
   padding: 10px 0 0;
 }
@@ -982,7 +971,7 @@ ul {
   font-size: 8px;
 }
 
-.profile-page .info-box .toggle-checkbox:checked+.toggle-switch::before {
+.profile-page .info-box .toggle-checkbox:checked + .toggle-switch::before {
   left: 62px;
 }
 
@@ -1447,7 +1436,6 @@ ul {
 }
 
 @keyframes go-up {
-
   0%,
   100% {
     transform: translateY(0);
