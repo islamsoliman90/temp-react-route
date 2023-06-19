@@ -1,4 +1,5 @@
 import React from "react";
+import { AppProvider } from "./context";
 import ReactDOM from "react-dom/client";
 import "./Css/index.css";
 import "./framework.css";
@@ -38,4 +39,4 @@ function App() {
   return <RouterProvider router={router} />;
 }
 
-ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+ReactDOM.createRoot(document.getElementById("root")).render(<AppProvider><App /></AppProvider> );

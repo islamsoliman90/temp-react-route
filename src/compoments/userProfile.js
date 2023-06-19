@@ -1,5 +1,5 @@
 import React from "react";
-
+import {Link} from "react-router-dom"
 function Userprofile() {
   return (
     <div class="welcome bg-white rad-10 txt-c-mobile block-mobile">
@@ -13,7 +13,7 @@ function Userprofile() {
       <img src="imgs/avatar.png" alt="" class="avatar" />
       <div class="body txt-c d-flex p-20 mt-20 mb-20 block-mobile">
         <div>
-          Islam Soliman{" "}
+          Islam Soliman
           <span class="d-block c-grey fs-14 mt-10">Developer</span>
         </div>
         <div>
@@ -23,12 +23,12 @@ function Userprofile() {
           $8500 <span class="d-block c-grey fs-14 mt-10">Earned</span>
         </div>
       </div>
-      <a
-        href="profile.html"
+      <Link
+        to="profile"
         class="visit d-block fs-14 bg-blue c-white w-fit btn-shape"
       >
         Profile
-      </a>
+      </Link>
     </div>
   );
 }

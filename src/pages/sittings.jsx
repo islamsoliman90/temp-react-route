@@ -1,9 +1,13 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import { useOutletContext } from "react-router-dom";
+import { useGlobalContext } from "../context";
 
 export default function Sittings() {
   const [, setActivePage] = useOutletContext();
   setActivePage((e) => (e = "sitting"));
+  let { toggleHandler, toggle } = useGlobalContext();
+
+
   return (
     <div class="page d-flex">
       <div class="content w-full">
@@ -35,7 +39,7 @@ export default function Sittings() {
               </div>
               <div>
                 <label>
-                  <input class="toggle-checkbox" type="checkbox" checked />
+                  <input class="toggle-checkbox" type="checkbox" onClick={toggleHandler("search")} checked={toggle.search} />
                   <div class="toggle-switch"></div>
                 </label>
               </div>
@@ -110,7 +114,7 @@ export default function Sittings() {
                 <p class="c-grey mt-5 mb-0 fs-13">Enable/Disable The Feature</p>
               </div>
               <label>
-                <input class="toggle-checkbox" type="checkbox" checked />
+                <input class="toggle-checkbox" type="checkbox" onClick={toggleHandler} checked={!toggle} />
                 <div class="toggle-switch"></div>
               </label>
             </div>
