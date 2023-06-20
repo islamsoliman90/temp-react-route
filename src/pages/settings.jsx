@@ -165,19 +165,19 @@ export default function Sittings() {
             <h2 class="mt-0 mb-10">Widgets Control</h2>
             <p class="mt-0 mb-20 c-grey fs-15">Show/Hide Widgets</p>
             <div class="control d-flex align-center mb-15">
-              <input type="checkbox" id="one" checked />
+              <input type="checkbox" id="one" />
               <label for="one">Quick Draft</label>
             </div>
             <div class="control d-flex align-center mb-15">
-              <input type="checkbox" id="two" checked />
+              <input type="checkbox" id="two" />
               <label for="two">Yearly Targets</label>
             </div>
             <div class="control d-flex align-center mb-15">
-              <input type="checkbox" id="three" checked />
+              <input type="checkbox" id="three" />
               <label for="three">Tickets Statistics</label>
             </div>
             <div class="control d-flex align-center mb-15">
-              <input type="checkbox" id="four" checked />
+              <input type="checkbox" id="four" />
               <label for="four">Latest News</label>
             </div>
             <div class="control d-flex align-center mb-15">
@@ -185,7 +185,7 @@ export default function Sittings() {
               <label for="five">Latest Tasks</label>
             </div>
             <div class="control d-flex align-center mb-15">
-              <input type="checkbox" id="six" checked />
+              <input type="checkbox" id="six" />
               <label for="six">Top Search Items</label>
             </div>
           </div>
@@ -196,7 +196,7 @@ export default function Sittings() {
               Control Backup Time And Location
             </p>
             <div class="date d-flex align-center mb-15">
-              <input type="radio" name="time" id="daily" checked />
+              <input type="radio" name="time" id="daily" />
               <label for="daily">Daily</label>
             </div>
             <div class="date d-flex align-center mb-15">

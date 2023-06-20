@@ -628,33 +628,27 @@ ul {
   -moz-appearance: none;
        appearance: none;
 }
-
 .widgets-control .control label {
   padding-left: 30px;
   cursor: pointer;
   position: relative;
 }
-
-.widgets-control .control label::before,
-.widgets-control .control label::after {
+.widgets-control .control label::before, .widgets-control .control label::after {
   position: absolute;
   left: 0;
   top: 50%;
   margin-top: -9px;
   border-radius: 4px;
 }
-
 .widgets-control .control label::before {
   content: "";
   width: 14px;
   height: 14px;
   border: 2px solid var(--grey-color);
 }
-
 .widgets-control .control label:hover::before {
   border-color: var(--blue-alt-color);
 }
-
 .widgets-control .control label::after {
   font-family: var(--fa-style-family-classic);
   content: "";
@@ -670,7 +664,6 @@ ul {
   transform: scale(0) rotate(360deg);
   transition: 0.3s;
 }
-
 .widgets-control .control input[type=checkbox]:checked + label::after {
   transform: scale(1);
 }
@@ -680,13 +673,11 @@ ul {
   -moz-appearance: none;
        appearance: none;
 }
-
 .backup-control .date label {
   padding-left: 30px;
   cursor: pointer;
   position: relative;
 }
-
 .backup-control .date label::before {
   content: "";
   position: absolute;
@@ -698,12 +689,11 @@ ul {
   border: 2px solid var(--grey-color);
   border-radius: 50%;
 }
-
 .backup-control .date label::after {
   content: "";
   position: absolute;
   left: 5px;
-  top: 5px;
+  top: 3px;
   width: 12px;
   height: 12px;
   background: var(--blue-color);
@@ -711,20 +701,16 @@ ul {
   transition: 0.3s;
   transform: scale(0);
 }
-
 .backup-control .date input[type=radio]:checked + label::before {
   border-color: var(--blue-color);
 }
-
 .backup-control .date input[type=radio]:checked + label::after {
   transform: scale(1);
 }
-
 .backup-control .servers {
   border-top: 1px solid #eee;
   padding-top: 20px;
 }
-
 @media (max-width: 767px) {
   .backup-control .servers {
     flex-wrap: wrap;
@@ -734,11 +720,9 @@ ul {
   border: 2px solid #eee;
   position: relative;
 }
-
 .backup-control .servers .server label {
   cursor: pointer;
 }
-
 .backup-control .servers input[type=radio]:checked + .server {
   border-color: var(--blue-color);
   color: var(--blue-color);
@@ -760,7 +744,6 @@ ul {
   transition: 0.3s;
   cursor: pointer;
 }
-
 .toggle-switch::before {
   font-family: var(--fa-style-family-classic);
   content: "";
