@@ -215,7 +215,7 @@ export default function Sittings() {
                   Megaman
                 </label>
               </div>
-              <input type="radio" name="servers" id="server-two" checked />
+              <input type="radio" name="servers" id="server-two" />
               <div class="server mb-15 rad-10 w-full">
                 <label class="d-block m-15" for="server-two">
                   <i class="fa-solid fa-server d-block mb-10"></i>
